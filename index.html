@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Anon">
+
+    <title>K-on! thread - image grabbing guide</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 70px;
+            background-image: url('http://i.imgur.com/LAQtugh.jpg');
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+        }
+        .container {
+            background-color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <p class="lead text-center">Небольшой гайд как быстро собрать пак картинок с любым аниме персонажем</p>
+            <ul class="list-unstyled text-center" style="font-size: 1.5em;">
+                <li>Качаем <a href="https://github.com/Bionus/imgbrd-grabber/releases">отсюда</a> программу. <br>
+                    Она кроссплатформенная, для виндовс качайте Grabber_*.exe, линуксоиды разберутся сами</li>
+                <li>Ставим, запускаем, заходим в Tools => Options. Дальше выберите <code>Folder</code> куда будут сохраняться картинки, также ставим <code>simultaneous downloads</code> на 10. <br>
+                    <img src="http://i.imgur.com/8BRBXHM.png"></li>
+                <li>Вписываем строку <code>%general%_%md5%.%ext%</code>, картинки будут сохраняться со всеми тегами + мд5 хеш для уникальности. <br>
+                    Есть и другие переменные, поиграйтесь с ними, если хотите. Список доступен по клику на <code>...</code> => <code>?</code> <br>
+                    <img src="http://i.imgur.com/6lloRMf.png"></li>
+                <li>С настройками в принципе всё. Жмём <code>Sources</code> и выбираем буру откуда будем качать. <br>
+                    Так как граббер иногда багается, то лучше не выбирать больше одной буры за раз, к тому же на разных бурах один персонаж может быть под разными тегами. <br>
+                    Теги каждой буры описывать очень объемно и в этом нет смысла, поэтому если вдруг у вас не ищет по какому-то 
+                    запросу на какой-то буре, то идите на саму буру, заходите в help и ищите cheat sheet по тегам,
+                    <a href="http://gelbooru.com/index.php?page=help&topic=cheatsheet">обычно это выглядит вот так.</a>
+                    Если вы не знаете как тегаются персонажи, то можно опять же поискать в гугле, например <code>k on yui gelbooru</code> и дальше по тегам</li>
+                <li>Выбираем к примеру gelbooru и поисковый запрос <code>nakano_azusa -rating:explicit</code><br>
+                    <img src="http://i.imgur.com/PIVKG28.png"></li>
+                <li>Жмём энтер, если всё успешно то вы увидите превью картинок. Дальше клацаем <code><b>Get all</b></code>. <br>
+                    Затем переходим во вкладку Downloads
+                    <br> <img src="http://i.imgur.com/G2QUid7.png"> <br>
+                    Ничего не трогаем и жмём Download. Граббер начнет качать картинки в течении минуты. 
+                    <br> <img src="http://i.imgur.com/svyDrX2.png"><br>
+                    В случае если в выдаче поиска вы увидели несколько тысяч картинок, а качаться начинают гораздо меньше, то просто перезапустите граббер. <br>
+                    Также стоит перезапускать его в случае если у вас не ищет по какому-то тегу, хотя он 100% правильный. Такое редко, но случается. <br>
+                    В настройках можно поставить <code>At start - Restore last session</code> чтобы не пришлось вводить поисковый запрос каждый раз.<br>
+                    Вот и всё.
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
